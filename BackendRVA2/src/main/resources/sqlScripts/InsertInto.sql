@@ -1,13 +1,3 @@
---Test podaci - OBAVEZNO!
-INSERT INTO "artikl"("id", "naziv", "proizvodjac")
-VALUES (-100, 'TestNaziv', 'TestProizv');
-INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
-VALUES (-100, 'TestNaziv', 'TestAdr', '+38121111111');
-INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
-VALUES (-100, to_date('01.01.2020.', 'dd.mm.yyyy.'), to_date('01.01.2021.', 'dd.mm.yyyy.'), 1, 0, TRUE);
-INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
-VALUES (-100, 1, 1, 1, 1, 'komad', 100);
-
 -- ARTIKL PODACI
 
 INSERT INTO "artikl"("id", "naziv", "proizvodjac")
@@ -95,3 +85,13 @@ INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kol
 VALUES (13, 5, 1, 10, 60, 'komad', 30);
 INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
 VALUES (14, 5, 2, 11, 130, 'komad', 40);
+
+--Test podaci - OBAVEZNO!
+INSERT INTO "artikl"("id", "naziv", "proizvodjac")
+VALUES (-100, 'TestNaziv', 'TestProizv');
+INSERT INTO "dobavljac"("id", "naziv", "adresa", "kontakt")
+VALUES (-100, 'TestNaziv', 'TestAdr', '+38121111111');
+INSERT INTO "porudzbina"("id", "datum", "isporuceno", "dobavljac", "iznos", "placeno")
+VALUES (-100, to_date('01.01.2020.', 'dd.mm.yyyy.'), to_date('01.01.2021.', 'dd.mm.yyyy.'), 1, 0, TRUE);
+INSERT INTO "stavka_porudzbine"("id", "porudzbina", "redni_broj", "artikl", "kolicina", "jedinica_mere", "cena")
+VALUES (-100, 1, 1, 1, 1, 'komad', 100);

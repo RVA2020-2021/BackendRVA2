@@ -64,6 +64,7 @@ public class ArtiklRestController {
 		if (!artiklRepository.existsById(artikl.getId()))
 			return new ResponseEntity<Artikl>(HttpStatus.CONFLICT);
 		artiklRepository.save(artikl);
+		
 		return new ResponseEntity<Artikl>(HttpStatus.OK);
 	}
 	@DeleteMapping("artikl/{id}")
